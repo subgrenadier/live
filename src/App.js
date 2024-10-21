@@ -25,7 +25,7 @@ const App = () => {
       {/* Video Player */}
       <div className="d-flex justify-content-center">
         <ReactPlayer
-          url="http://206.189.80.101:8000/live/stream1/index.m3u8"
+          url="https://146.190.96.112:8443/live/stream.flv"
           playing
           controls
           width="80%"
