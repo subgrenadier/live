@@ -1,37 +1,66 @@
 import React, { useEffect, useState } from 'react';
 import ReactPlayer from 'react-player';
-import { Modal, Button } from 'react-bootstrap';
+import { Modal, Button, Container, Row, Col, Image } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   const [showAd, setShowAd] = useState(true);
 
-  // Handle closing the popup and opening the affiliate link
   const handleCloseAd = () => {
-    window.open('https://shopee.com.my', '_blank');
+    window.open('https://s.shopee.com.my/9zfuoCpBpL', '_blank');
     setShowAd(false);
   };
 
   useEffect(() => {
-    // Display ad popup when user visits the site
     const timer = setTimeout(() => setShowAd(true), 1000);
     return () => clearTimeout(timer);
   }, []);
 
   return (
-    <div className="App">
-      <h1 className="text-center my-4">Live Stream</h1>
+    <Container className="App my-4">
+      <h1 className="text-center">Live Stream</h1>
 
       {/* Video Player */}
-      <div className="d-flex justify-content-center">
-        <ReactPlayer
-          url="https://berita-viral.com/live/stream/index.m3u8"
-          playing
-          controls
-          width="80%"
-          height="500px"
-        />
-      </div>
+      <Row className="justify-content-center mb-4">
+        <Col xs={12} md={8}>
+          <ReactPlayer
+            url="https://berita-viral.com/live/stream/index.m3u8"
+            playing
+            controls
+            width="100%"
+            height="500px"
+          />
+        </Col>
+      </Row>
+
+      {/* Match Details */}
+      <Row className="text-center mb-4">
+        <Col>
+          <h2>Upcoming Match: Gwangju vs JDT</h2>
+          <Image
+            src="https://i.ytimg.com/vi/MCLBw4PsOHU/hq720.jpg"
+            alt="Match Preview"
+            rounded
+            className="my-3"
+            fluid
+          />
+          <p>
+            Juara bertahan Liga Super Malaysia, Johor Darul Ta'zim akan meneruskan perjuangan dalam saingan Liga Juara-Juara Asia Elit (ACLE) menentang pendahulu kumpulan dari Korea Selatan, Gwangju FC petang esok.
+          </p>
+          <p>
+            JDT yang kini berada di tangga kedua kumpulan A bagi saingan tersebut mengumpul 4 mata manakala Gwangju gah mendahului kumpulan dengan 6 mata melalui 2 kemenangan terdahulu.
+          </p>
+          <p>
+            Pertemuan ini pastinya menjadi tumpuan bagi zon Asia Timur dengan kedua-dua pasukan menginginkan tempat teratas kumpulan selepas mengharungi perlawanan ketiga kumpulan.
+          </p>
+          <h5>Info Siaran Langsung & Live Streaming:</h5>
+          <p>
+            <strong>Tarikh:</strong> 22 Oktober 2024 (Selasa)<br />
+            <strong>Masa:</strong> 6 petang<br />
+            <strong>Venue:</strong> Yongin Citizen Sports Park
+          </p>
+        </Col>
+      </Row>
 
       {/* Ad Popup */}
       <Modal show={showAd} onHide={handleCloseAd} centered>
@@ -47,7 +76,7 @@ const App = () => {
           </Button>
         </Modal.Footer>
       </Modal>
-    </div>
+    </Container>
   );
 };
 
