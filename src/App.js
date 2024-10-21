@@ -18,7 +18,14 @@ const App = () => {
 
   return (
     <Container className="App my-4">
-      <h1 className="text-center">Live Stream</h1>
+      <h2 className="text-center">Live Stream: Gwangju vs JDT</h2>
+      <Image
+        src="https://i.ytimg.com/vi/MCLBw4PsOHU/hq720.jpg"
+        alt="Match Preview"
+        rounded
+        className="my-3"
+        fluid
+      />
 
       {/* Video Player */}
       <Row className="justify-content-center mb-4">
@@ -33,17 +40,16 @@ const App = () => {
         </Col>
       </Row>
 
+      <h5>Info Siaran Langsung & Live Streaming:</h5>
+      <p>
+        <strong>Tarikh:</strong> 22 Oktober 2024 (Selasa)<br />
+        <strong>Masa:</strong> 6 petang<br />
+        <strong>Venue:</strong> Yongin Citizen Sports Park
+      </p>
+
       {/* Match Details */}
-      <Row className="text-center mb-4">
+      <Row className="text-start mb-4">
         <Col>
-          <h2>Upcoming Match: Gwangju vs JDT</h2>
-          <Image
-            src="https://i.ytimg.com/vi/MCLBw4PsOHU/hq720.jpg"
-            alt="Match Preview"
-            rounded
-            className="my-3"
-            fluid
-          />
           <p>
             Juara bertahan Liga Super Malaysia, Johor Darul Ta'zim akan meneruskan perjuangan dalam saingan Liga Juara-Juara Asia Elit (ACLE) menentang pendahulu kumpulan dari Korea Selatan, Gwangju FC petang esok.
           </p>
@@ -53,12 +59,7 @@ const App = () => {
           <p>
             Pertemuan ini pastinya menjadi tumpuan bagi zon Asia Timur dengan kedua-dua pasukan menginginkan tempat teratas kumpulan selepas mengharungi perlawanan ketiga kumpulan.
           </p>
-          <h5>Info Siaran Langsung & Live Streaming:</h5>
-          <p>
-            <strong>Tarikh:</strong> 22 Oktober 2024 (Selasa)<br />
-            <strong>Masa:</strong> 6 petang<br />
-            <strong>Venue:</strong> Yongin Citizen Sports Park
-          </p>
+
         </Col>
       </Row>
 
