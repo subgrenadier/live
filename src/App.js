@@ -25,7 +25,7 @@ const App = () => {
       {/* Video Player */}
       <div className="d-flex justify-content-center">
         <ReactPlayer
-          url="https://146.190.96.112:8443/live/stream.flv"
+          url="https://berita-viral.com/live/stream/index.m3u8"
           playing
           controls
           width="80%"
