@@ -7,7 +7,7 @@ const App = () => {
   const [showAd, setShowAd] = useState(true);
 
   const handleCloseAd = () => {
-    window.open('https://s.shopee.com.my/9zfuoCpBpL', '_blank');
+    window.open('https://s.shopee.com.my/qRfu8QHcS', '_blank');
     setShowAd(false);
   };
 
@@ -73,7 +73,7 @@ const App = () => {
         </Modal.Body>
         <Modal.Footer>
           <Button variant="primary" onClick={handleCloseAd}>
-            Close Ad
+            Close
           </Button>
         </Modal.Footer>
       </Modal>
