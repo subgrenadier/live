@@ -32,7 +32,39 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.dark-mode {
+  background-color: #121212;
+  /* Dark grey background */
+  color: white;
+  /* White text */
+}
+
+.dark-mode h2,
+.dark-mode h5 {
+  color: white;
+  /* Ensure headings are white */
+}
+
+.dark-mode p {
+  color: #e0e0e0;
+  /* Light grey for paragraph text */
+}
+
+.dark-mode .modal-content {
+  background-color: #1e1e1e;
+  /* Darker background for modal */
+  color: white;
+  /* White text for modal */
+}
+
+.dark-mode .modal-header,
+.dark-mode .modal-footer {
+  border-color: #444;
+  /* Change border color to match dark theme */
 }

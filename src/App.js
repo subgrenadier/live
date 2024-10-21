@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import ReactPlayer from 'react-player';
 import { Modal, Button, Container, Row, Col, Image } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css'; // Import your CSS file
 
 const App = () => {
   const [showAd, setShowAd] = useState(true);
@@ -17,15 +18,9 @@ const App = () => {
   }, []);
 
   return (
-    <Container className="App my-4">
+    <Container className="App my-4 dark-mode">
       <h2 className="text-center">Live Stream: Gwangju vs JDT</h2>
-      <Image
-        src="https://i.ytimg.com/vi/MCLBw4PsOHU/hq720.jpg"
-        alt="Match Preview"
-        rounded
-        className="my-3"
-        fluid
-      />
+
 
       {/* Video Player */}
       <Row className="justify-content-center mb-4">
@@ -48,6 +43,13 @@ const App = () => {
       </p>
 
       {/* Match Details */}
+      <Image
+        src="https://i.ytimg.com/vi/MCLBw4PsOHU/hq720.jpg"
+        alt="Match Preview"
+        rounded
+        className="my-3"
+        fluid
+      />
       <Row className="text-start mb-4">
         <Col>
           <p>
@@ -59,7 +61,6 @@ const App = () => {
           <p>
             Pertemuan ini pastinya menjadi tumpuan bagi zon Asia Timur dengan kedua-dua pasukan menginginkan tempat teratas kumpulan selepas mengharungi perlawanan ketiga kumpulan.
           </p>
-
         </Col>
       </Row>
 
