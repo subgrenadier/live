@@ -18,7 +18,7 @@ const App = () => {
   }, []);
 
   return (
-    <Container className="App my-4 dark-mode">
+    <Container fluid className="App my-4 dark-mode">
       <h2 className="text-center">Live Stream: Gwangju vs JDT</h2>
 
 

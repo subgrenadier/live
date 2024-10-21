@@ -68,3 +68,8 @@
   border-color: #444;
   /* Change border color to match dark theme */
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
