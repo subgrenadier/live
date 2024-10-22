@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import ReactPlayer from 'react-player';
 import { Container, Row, Col, Modal, Button, Image } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { Helmet } from 'react-helmet';
+import SocialShare from './SocialShare';
 
 const App = () => {
   const [visitorCount, setVisitorCount] = useState(0);
@@ -12,8 +13,7 @@ const App = () => {
   const [adLink, setAdLink] = useState('');
   const [videoHeight, setVideoHeight] = useState('500px'); // Default height for video
 
-  // List of ad links to randomize
-  const adLinks = [
+  const adLinks = useMemo(() => [
     'https://s.shopee.com.my/702Jn2koKU',
     'https://s.shopee.com.my/7ALjzLkAzX',
     'https://s.shopee.com.my/8fAXm6eSwq',
@@ -21,13 +21,12 @@ const App = () => {
     'https://s.shopee.com.my/6ATCnj4f5Q',
     'https://s.shopee.com.my/609mbQ5IQP',
     'https://s.shopee.com.my/6V63CL3OPW'
-  ];
+  ], []);
 
-  // Randomize ad link on component mount
   useEffect(() => {
     const randomLink = adLinks[Math.floor(Math.random() * adLinks.length)];
     setAdLink(randomLink);
-  }, []);
+  }, [adLinks]); // Include adLinks in the dependency array
 
   // Countdown logic to match start time (6 PM Malaysia Time)
   useEffect(() => {
@@ -107,6 +106,9 @@ const App = () => {
 
       <Container fluid className="App my-4 dark-mode">
         <h2 className="text-center">Live Stream: Gwangju vs JDT</h2>
+        {/* Add the Social Share Component */}
+        <h4 className="text-center my-3">Share this match:</h4>
+        <SocialShare title="Live Stream: Gwangju vs JDT" url="https://jdt-live.netlify.app/" />
 
         {/* Video Player */}
         <Row className="justify-content-center mb-4">

@@ -90,3 +90,24 @@ body {
   border-color: #444;
   /* Change border color to match dark theme */
 }
+
+.social-share {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  /* Space between icons */
+  margin-top: 20px;
+  /* Space above the icons */
+}
+
+.social-share a {
+  color: #000;
+  /* Change icon color if needed */
+  transition: color 0.3s;
+  /* Transition effect */
+}
+
+.social-share a:hover {
+  color: #007bff;
+  /* Change color on hover */
+}
