@@ -28,7 +28,7 @@ const App = () => {
 
 
   useEffect(() => {
-    const ws = new WebSocket('ws://localhost:8080');
+    const ws = new WebSocket('ws://berita-viral.com/ws');
 
     ws.onmessage = (event) => {
       const data = JSON.parse(event.data);
