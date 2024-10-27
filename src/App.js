@@ -7,6 +7,7 @@ import SocialShare from './SocialShare';
 import ReactPlayer from 'react-player';
 
 const App = () => {
+
   const [showAd, setShowAd] = useState(true);
   const [countdown, setCountdown] = useState('');
   const [adLink, setAdLink] = useState('');
@@ -96,8 +97,7 @@ const App = () => {
         <Row className="justify-content-center mb-4">
           <Col xs={12} md={8}>
             <ReactPlayer
-              url="https://berita-viral.com/live/stream/index.m3u8"
-              playing
+              url="https://berita-viral.com/live/stream.flv"
               controls
               width="100%"
               height={videoHeight} // Dynamic height
