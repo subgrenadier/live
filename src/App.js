@@ -97,7 +97,7 @@ const App = () => {
         <Row className="justify-content-center mb-4">
           <Col xs={12} md={8}>
             <ReactPlayer
-              url="https://berita-viral.com/live/stream/index.m3u8"
+              url="https://berita-viral.com/live/stream/index.mpd"
               controls
               width="100%"
               height={videoHeight} // Dynamic height
