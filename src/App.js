@@ -4,13 +4,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { Helmet } from 'react-helmet';
 import SocialShare from './SocialShare';
-import VideoOverlay from './VideoOverlay';
+import ReactPlayer from 'react-player';
+// import VideoOverlay from './VideoOverlay';
 
 const App = () => {
   const [showAd, setShowAd] = useState(true);
   const [countdown, setCountdown] = useState('');
   const [adLink, setAdLink] = useState('');
-  const [viewers, setViewers] = useState(0);
+  // const [viewers, setViewers] = useState(0);
 
   const adLinks = useMemo(() => [
     'https://s.shopee.com.my/9zg3Ov55S1',
@@ -27,16 +28,16 @@ const App = () => {
 
 
 
-  useEffect(() => {
-    const ws = new WebSocket('wss://berita-viral.com:8080/ws');
+  // useEffect(() => {
+  //   const ws = new WebSocket('wss://berita-viral.com/ws');
 
-    ws.onmessage = (event) => {
-      const data = JSON.parse(event.data);
-      setViewers(data.viewers);
-    };
+  //   ws.onmessage = (event) => {
+  //     const data = JSON.parse(event.data);
+  //     setViewers(data.viewers);
+  //   };
 
-    return () => ws.close();
-  }, []);
+  //   return () => ws.close();
+  // }, []);
 
 
   // Countdown logic to match start time (6 PM Malaysia Time)
@@ -100,7 +101,7 @@ const App = () => {
           </Col>
         </Row> */}
 
-        {/* <div style={{ position: 'relative', padding: '56.25% 0 0 0', height: 0 }}>
+        <div style={{ position: 'relative', padding: '56.25% 0 0 0', height: 0 }}>
           <ReactPlayer
             url="https://berita-viral.com/live/stream/index.m3u8"
             className='react-player'
@@ -117,12 +118,12 @@ const App = () => {
               },
             }}
           />
-        </div> */}
+        </div>
 
 
 
         {/* Use the VideoWithOverlay component */}
-        <VideoOverlay viewers={viewers} /> {/* Pass viewer count as a prop */}
+        {/* <VideoOverlay viewers={100} /> Pass viewer count as a prop */}
 
         {/* Add the Social Share Component */}
         <h4 className="text-center my-3">Share this match:</h4>
