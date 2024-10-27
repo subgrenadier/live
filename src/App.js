@@ -28,7 +28,7 @@ const App = () => {
 
 
   useEffect(() => {
-    const ws = new WebSocket('ws://berita-viral.com/ws');
+    const ws = new WebSocket('ws://berita-viral.com:8080/ws');
 
     ws.onmessage = (event) => {
       const data = JSON.parse(event.data);
@@ -95,10 +95,29 @@ const App = () => {
               playing
               controls
               width="100%"
-              height={videoHeight} // Dynamic height
+              height="100%" // Dynamic height
             />
           </Col>
         </Row> */}
+
+        {/* <div style={{ position: 'relative', padding: '56.25% 0 0 0', height: 0 }}>
+          <ReactPlayer
+            url="https://berita-viral.com/live/stream/index.m3u8"
+            className='react-player'
+            width='100%'
+            height='100%'
+            controls={true} // Show controls
+            style={{ position: 'absolute', top: 0, left: 0 }}
+            playing // Automatically start playing
+            config={{
+              file: {
+                attributes: {
+                  crossOrigin: 'anonymous',
+                },
+              },
+            }}
+          />
+        </div> */}
 
 
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { FaEye } from 'react-icons/fa';
 import ReactPlayer from 'react-player';
 import './ViewerOverlay.css'; // Custom styles
