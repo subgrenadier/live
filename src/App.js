@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useMemo } from 'react';
-import { Container, Row, Modal, Button, Image } from 'react-bootstrap';
+import { Container, Row, Col, Modal, Button, Image } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { Helmet } from 'react-helmet';
@@ -11,7 +11,7 @@ const App = () => {
   const [showAd, setShowAd] = useState(true);
   const [countdown, setCountdown] = useState('');
   const [adLink, setAdLink] = useState('');
-  // const [viewers, setViewers] = useState(0);
+  const [videoHeight, setVideoHeight] = useState('500px'); // Default height for video
 
   const adLinks = useMemo(() => [
     'https://s.shopee.com.my/9zg3Ov55S1',
@@ -25,19 +25,6 @@ const App = () => {
     const randomLink = adLinks[Math.floor(Math.random() * adLinks.length)];
     setAdLink(randomLink);
   }, [adLinks]); // Include adLinks in the dependency array
-
-
-
-  // useEffect(() => {
-  //   const ws = new WebSocket('wss://berita-viral.com/ws');
-
-  //   ws.onmessage = (event) => {
-  //     const data = JSON.parse(event.data);
-  //     setViewers(data.viewers);
-  //   };
-
-  //   return () => ws.close();
-  // }, []);
 
 
   // Countdown logic to match start time (6 PM Malaysia Time)
@@ -69,6 +56,24 @@ const App = () => {
     setShowAd(false);
   };
 
+  // Adjust video height based on screen orientation and size
+  const updateVideoHeight = () => {
+    const aspectRatio = 9 / 16; // 16:9 aspect ratio
+    if (window.innerHeight > window.innerWidth) {
+      // Portrait mode: Height is adjusted to fit the width based on aspect ratio
+      setVideoHeight(`${window.innerWidth * aspectRatio}px`);
+    } else {
+      // Landscape mode: Default height
+      setVideoHeight('500px');
+    }
+  };
+
+  useEffect(() => {
+    updateVideoHeight(); // Set the height initially
+    window.addEventListener('resize', updateVideoHeight); // Listen for window resize events
+
+    return () => window.removeEventListener('resize', updateVideoHeight); // Cleanup event listener
+  }, []);
 
   return (
     <>
@@ -89,57 +94,35 @@ const App = () => {
 
 
         {/* Video Player */}
-        {/* <Row className="justify-content-center mb-4">
+        <Row className="justify-content-center mb-4">
           <Col xs={12} md={8}>
             <ReactPlayer
               url="https://berita-viral.com/live/stream/index.m3u8"
               playing
               controls
               width="100%"
-              height="100%" // Dynamic height
+              height={videoHeight} // Dynamic height
             />
           </Col>
-        </Row> */}
+        </Row>
 
-        <div style={{ position: 'relative', padding: '56.25% 0 0 0', height: 0 }}>
-          <ReactPlayer
-            url="https://berita-viral.com/live/stream/index.m3u8"
-            className='react-player'
-            width='100%'
-            height='100%'
-            controls={true} // Show controls
-            style={{ position: 'absolute', top: 0, left: 0 }}
-            playing // Automatically start playing
-            config={{
-              file: {
-                attributes: {
-                  crossOrigin: 'anonymous',
-                },
-              },
-            }}
+        <Row className="text-start mb-4" style={{ margin: '0 10%' }}>
+
+          {/* Add the Social Share Component */}
+          <h4 className="text-center my-3">Share this match:</h4>
+          <SocialShare title="Live Stream: Selangor vs JDT" url="https://jdt-live.netlify.app/" />
+
+          {/* Match Details */}
+          <Image
+            src="https://www.imghost.net/ib/Bbxzm7VQZpr41NP_1730014602.jpg"
+            alt="Match Preview"
+            rounded
+            className="my-3"
+            fluid
+            width="800vw"
           />
-        </div>
 
 
-
-        {/* Use the VideoWithOverlay component */}
-        {/* <VideoOverlay viewers={100} /> Pass viewer count as a prop */}
-
-        {/* Add the Social Share Component */}
-        <h4 className="text-center my-3">Share this match:</h4>
-        <SocialShare title="Live Stream: Selangor vs JDT" url="https://jdt-live.netlify.app/" />
-
-        {/* Match Details */}
-        <Image
-          src="https://www.imghost.net/ib/Bbxzm7VQZpr41NP_1730014602.jpg"
-          alt="Match Preview"
-          rounded
-          className="my-3"
-          fluid
-          width="800vw"
-        />
-
-        <Row className="text-start mb-4" style={{ margin: '0 20%' }}>
           <h5>Info Siaran Langsung & Live Streaming:</h5>
           <p>
             <strong>Tarikh:</strong> 27 Oktober 2024 (Ahad)<br />
@@ -172,8 +155,7 @@ const App = () => {
           </Modal.Footer>
         </Modal>
 
-        {/* Visitor Counter & Popularity Nudge */}
-        <h4 className="text-center my-3 py-2">👀  people are watching now!</h4>
+
       </Container>
     </>
   );
