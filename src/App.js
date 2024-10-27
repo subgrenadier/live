@@ -96,7 +96,7 @@ const App = () => {
         <Row className="justify-content-center mb-4">
           <Col xs={12} md={8}>
             <ReactPlayer
-              url="https://berita-viral.com/live/stream.flv"
+              url="https://berita-viral.com/live/stream/index.m3u8"
               playing
               controls
               width="100%"
