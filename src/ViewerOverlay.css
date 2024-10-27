@@ -1,0 +1,35 @@
+.player-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    /* Adjust as needed */
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.react-player {
+    position: relative;
+    z-index: 1;
+}
+
+.viewer-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 50% opacity */
+    padding: 5px 10px;
+    border-radius: 50px;
+    /* Rounded corners */
+    z-index: 2;
+    color: white;
+    font-size: 14px;
+}
+
+.eye-icon {
+    margin-right: 5px;
+    font-size: 16px;
+}
