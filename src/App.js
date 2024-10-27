@@ -5,7 +5,6 @@ import './App.css';
 import { Helmet } from 'react-helmet';
 import SocialShare from './SocialShare';
 import ReactPlayer from 'react-player';
-// import VideoOverlay from './VideoOverlay';
 
 const App = () => {
   const [showAd, setShowAd] = useState(true);
@@ -14,11 +13,11 @@ const App = () => {
   const [videoHeight, setVideoHeight] = useState('500px'); // Default height for video
 
   const adLinks = useMemo(() => [
-    'https://s.shopee.com.my/9zg3Ov55S1',
-    'https://s.shopee.com.my/AUcJzq3BR8',
-    'https://s.shopee.com.my/AKItnX3om7',
-    'https://s.shopee.com.my/8AEPDYC4Ai',
-    'https://s.shopee.com.my/7zuz1FChVh'
+    'https://s.shopee.com.my/4AiGggG2s8',
+    'https://s.shopee.com.my/40OqUNGgD7',
+    'https://s.shopee.com.my/4VL75IEmCE',
+    'https://s.shopee.com.my/4L1gszFPXD',
+    'https://s.shopee.com.my/3VSZtSIaE4'
   ], []);
 
   useEffect(() => {
@@ -97,7 +96,7 @@ const App = () => {
         <Row className="justify-content-center mb-4">
           <Col xs={12} md={8}>
             <ReactPlayer
-              url="https://berita-viral.com/live/stream/index.m3u8"
+              url="https://berita-viral.com/live/stream.flv"
               playing
               controls
               width="100%"
