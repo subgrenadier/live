@@ -19,6 +19,7 @@ function App() {
                 >
                     Learn React
                 </a>
+                <h1>Active Users: <span id="userCount">0</span></h1>
             </header>
         </div>
     );
