@@ -1,5 +1,5 @@
-import React, { useEffect, useState, useMemo } from 'react';
-import { Container, Row, Col, Modal, Button, Image } from 'react-bootstrap';
+import React, { useEffect, useState } from 'react';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { Helmet } from 'react-helmet';
@@ -10,23 +10,23 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const App = () => {
 
-  const [showAd, setShowAd] = useState(true);
+  // const [showAd, setShowAd] = useState(true);
   const [countdown, setCountdown] = useState('');
-  const [adLink, setAdLink] = useState('');
-  const [videoHeight, setVideoHeight] = useState('500px'); // Default height for video
+  // const [adLink, setAdLink] = useState('');
+  // const [videoHeight, setVideoHeight] = useState('500px'); // Default height for video
 
-  const adLinks = useMemo(() => [
-    'https://s.shopee.com.my/4AiGggG2s8',
-    'https://s.shopee.com.my/40OqUNGgD7',
-    'https://s.shopee.com.my/4VL75IEmCE',
-    'https://s.shopee.com.my/4L1gszFPXD',
-    'https://s.shopee.com.my/3VSZtSIaE4'
-  ], []);
+  // const adLinks = useMemo(() => [
+  //   'https://s.shopee.com.my/4AiGggG2s8',
+  //   'https://s.shopee.com.my/40OqUNGgD7',
+  //   'https://s.shopee.com.my/4VL75IEmCE',
+  //   'https://s.shopee.com.my/4L1gszFPXD',
+  //   'https://s.shopee.com.my/3VSZtSIaE4'
+  // ], []);
 
-  useEffect(() => {
-    const randomLink = adLinks[Math.floor(Math.random() * adLinks.length)];
-    setAdLink(randomLink);
-  }, [adLinks]); // Include adLinks in the dependency array
+  // useEffect(() => {
+  //   const randomLink = adLinks[Math.floor(Math.random() * adLinks.length)];
+  //   setAdLink(randomLink);
+  // }, [adLinks]); // Include adLinks in the dependency array
 
 
   // Countdown logic to match start time (6 PM Malaysia Time)
@@ -53,29 +53,29 @@ const App = () => {
   }, []);
 
 
-  const handleCloseAd = () => {
-    window.open(adLink, '_blank'); // Open random ad link
-    setShowAd(false);
-  };
+  // const handleCloseAd = () => {
+  //   window.open(adLink, '_blank'); // Open random ad link
+  //   setShowAd(false);
+  // };
 
   // Adjust video height based on screen orientation and size
-  const updateVideoHeight = () => {
-    const aspectRatio = 9 / 16; // 16:9 aspect ratio
-    if (window.innerHeight > window.innerWidth) {
-      // Portrait mode: Height is adjusted to fit the width based on aspect ratio
-      setVideoHeight(`${window.innerWidth * aspectRatio}px`);
-    } else {
-      // Landscape mode: Default height
-      setVideoHeight('500px');
-    }
-  };
+  // const updateVideoHeight = () => {
+  //   const aspectRatio = 9 / 16; // 16:9 aspect ratio
+  //   if (window.innerHeight > window.innerWidth) {
+  //     // Portrait mode: Height is adjusted to fit the width based on aspect ratio
+  //     setVideoHeight(`${window.innerWidth * aspectRatio}px`);
+  //   } else {
+  //     // Landscape mode: Default height
+  //     setVideoHeight('500px');
+  //   }
+  // };
 
-  useEffect(() => {
-    updateVideoHeight(); // Set the height initially
-    window.addEventListener('resize', updateVideoHeight); // Listen for window resize events
+  // useEffect(() => {
+  //   updateVideoHeight(); // Set the height initially
+  //   window.addEventListener('resize', updateVideoHeight); // Listen for window resize events
 
-    return () => window.removeEventListener('resize', updateVideoHeight); // Cleanup event listener
-  }, []);
+  //   return () => window.removeEventListener('resize', updateVideoHeight); // Cleanup event listener
+  // }, []);
 
   return (
     <>
