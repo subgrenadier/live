@@ -24,16 +24,6 @@
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root" style="height: 100%;"></div>
 
-
-  <!-- Connect to the Socket.io server using its full URL -->
-  <script src="https://socket.berita-viral.com/socket.io/socket.io.js"></script>
-  <script>
-    const socket = io('https://socket.berita-viral.com'); // Ensure this URL matches your Socket.io server
-
-    socket.on('activeUsers', (count) => {
-      document.getElementById('userCount').textContent = count;
-    });
-  </script>
 </body>
 
 </html>
