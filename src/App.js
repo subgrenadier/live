@@ -13,12 +13,11 @@ const App = () => {
   const [videoHeight, setVideoHeight] = useState('500px'); // Default height for video
 
   const adLinks = useMemo(() => [
-    'https://s.shopee.com.my/5VDmETEZxN',
-    'https://s.shopee.com.my/7fIGoR2P5A',
-    'https://s.shopee.com.my/6KmtE5RKTz',
-    'https://s.shopee.com.my/702a1LbJuT',
-    'https://s.shopee.com.my/50HVdhdnMQ',
-    'https://s.shopee.com.my/702a1PQleG'
+    'https://s.shopee.com.my/7UyqhqelyU',
+    'https://s.shopee.com.my/4L1ovziQNR',
+    'https://s.shopee.com.my/30WRLbLy1P',
+    'https://s.shopee.com.my/2AxKM5kb3P',
+    'https://s.shopee.com.my/7KfQVfgZjy'
   ], []);
 
   useEffect(() => {
@@ -55,24 +54,24 @@ const App = () => {
     <>
       {/* SEO Meta Tags */}
       <Helmet>
-        <title>Live Stream: Terengganu FC vs Penang FC | Berita Viral</title>
-        <meta name="description" content="Watch Terengganu FC vs Penang FC live streaming. Stay updated with match info and exciting offers." />
-        <meta property="og:title" content="Live Stream: Terengganu FC vs Penang FC" />
+        <title>Live Stream: Negeri Sembilan FC vs JDT FC | Berita Viral</title>
+        <meta name="description" content="Watch Negeri Sembilan FC vs JDT FC live streaming. Stay updated with match info and exciting offers." />
+        <meta property="og:title" content="Live Stream: Negeri Sembilan FC vs JDT FC" />
         <meta property="og:description" content="Join the live stream and enjoy the exciting match!" />
-        <link rel="canonical" href="https://ter-live.netlify.app/" />
-        <meta property="og:image" content="https://i.ibb.co/FWs04zC/terengganu.png" />
+        <link rel="canonical" href="https://jdt-live.netlify.app/" />
+        <meta property="og:image" content="https://nokomen.com/wp-content/uploads/2024/10/85-p15-negerivsjdt.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
       </Helmet>
 
       <Container fluid className="dark-mode">
-        <h2 className="text-center">Live Stream: Terengganu FC vs Penang FC</h2>
+        <h2 className="text-center">Live Stream: Negeri Sembilan FC vs JDT FC</h2>
 
 
         {/* Video Player */}
         <Row className="justify-content-center mb-4">
           <Col xs={12} md={8}>
-            <VideoPlayer height={videoHeight} url="https://stream.berita-viral.com/live/mystream/index.m3u8" />
+            <VideoPlayer height={videoHeight} url="https://stream.berita-viral.com/live/jdtlive/index.m3u8" />
           </Col>
         </Row>
 
@@ -80,14 +79,14 @@ const App = () => {
 
           {/* Add the Social Share Component */}
           <h4 className="text-center my-3">Share this match:</h4>
-          <SocialShare title="Live Stream: Terengganu FC vs Penang FC" url="https://ter-live.netlify.app/" />
+          <SocialShare title="Live Stream: Negeri Sembilan FC vs JDT FC" url="https://jdt-live.netlify.app/" />
 
           <div className="info-container" style={{ marginTop: '10em' }}>
             <h5>Info Siaran Langsung & Live Streaming:</h5>
             <p>
               <strong>Tarikh:</strong> 1 November 2024 (Jumaat)<br />
               <strong>Masa:</strong> 9.00 pm<br />
-              <strong>Venue:</strong> Stadium Sultan Mizan Zainal Abidin
+              <strong>Venue:</strong> Stadium Paroi
             </p>
           </div>
 
