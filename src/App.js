@@ -72,7 +72,7 @@ const App = () => {
         {/* Video Player */}
         <Row className="justify-content-center mb-4">
           <Col xs={12} md={8}>
-            <VideoPlayer height={videoHeight} url="https://spt-sonykal-1-us.lg.wurl.tv/playlist.m3u8" />
+            <VideoPlayer height={videoHeight} url="https://stream.berita-viral.com/live/mystream/index.m3u8" />
           </Col>
         </Row>
 
