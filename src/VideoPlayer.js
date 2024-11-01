@@ -5,18 +5,19 @@ import './VideoPlayer.css'; // Assuming you have styles for the overlay
 
 const socket = io('https://socket.berita-viral.com'); // Replace with your Socket.io server URL
 
-const VideoPlayer = () => {
+
+const VideoPlayer = ({ height, url }) => { // Accept `height` and `url` as props
     const [viewers, setViewers] = useState(0);
-    const videoHeight = 'auto'; // Adjust your video height logic as needed
 
     useEffect(() => {
-        // Listen for viewer count updates from the Socket.io server
+        // Listen for viewer count updates from the Socket.IO server
         socket.on('activeUsers', (count) => {
             setViewers(count);
         });
 
         // Clean up the connection on component unmount
         return () => {
+            socket.off('activeUsers'); // Turn off the listener for `activeUsers`
             socket.disconnect();
         };
     }, []);
@@ -33,11 +34,11 @@ const VideoPlayer = () => {
         <div className="video-container">
             <ReactPlayer
                 // url="https://berita-viral.com/live/stream/index.mpd"
-                url="https://p2hs.vzan.com/slowlive/821481626725612417/live.m3u8"
+                url={url}
                 controls
                 playing
                 width="100%"
-                height={videoHeight}
+                height={height}
             />
             <div className="viewer-overlay">
                 <i className="fas fa-user viewer-icon"></i>
