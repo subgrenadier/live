@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import ReactPlayer from 'react-player';
 // import io from 'socket.io-client';
 import './VideoPlayer.css'; // Assuming you have styles for the overlay
