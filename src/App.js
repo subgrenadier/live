@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { Helmet } from 'react-helmet';
 import SocialShare from './SocialShare';
-import VideoPlayer from './VideoPlayer';
+import VideoPlayer from './VideoPlayer.js';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const App = () => {
@@ -72,7 +72,7 @@ const App = () => {
         {/* Video Player */}
         <Row className="justify-content-center mb-4">
           <Col xs={12} md={8}>
-            <VideoPlayer height={videoHeight} url="https://stream.berita-viral.com/live/jdtlive/index.m3u8" />
+            <VideoPlayer height={videoHeight} url="https://berita-viral.com/live/jdtlive/index.m3u8" />
           </Col>
         </Row>
 
