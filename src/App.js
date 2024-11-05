@@ -13,11 +13,12 @@ const App = () => {
   const [videoHeight, setVideoHeight] = useState('500px'); // Default height for video
 
   const adLinks = useMemo(() => [
-    'https://s.shopee.com.my/7UyqhqelyU',
-    'https://s.shopee.com.my/4L1ovziQNR',
-    'https://s.shopee.com.my/30WRLbLy1P',
-    'https://s.shopee.com.my/2AxKM5kb3P',
-    'https://s.shopee.com.my/7KfQVfgZjy'
+    'https://s.shopee.com.my/3VSo8HMKBg',
+    'https://s.shopee.com.my/9zgHrwdyng',
+    'https://s.shopee.com.my/60A96gdEzf',
+    'https://s.shopee.com.my/2fth8ckBqC',
+    'https://s.shopee.com.my/9f3RTYHePW',
+    'https://s.shopee.com.my/6ATZJc0mjQ'
   ], []);
 
   useEffect(() => {
@@ -54,18 +55,18 @@ const App = () => {
     <>
       {/* SEO Meta Tags */}
       <Helmet>
-        <title>Live Stream: Negeri Sembilan FC vs JDT FC | Berita Viral</title>
-        <meta name="description" content="Watch Negeri Sembilan FC vs JDT FC live streaming. Stay updated with match info and exciting offers." />
-        <meta property="og:title" content="Live Stream: Negeri Sembilan FC vs JDT FC" />
+        <title>Live Stream: JDT FC vs Ulsan HD FC | Berita Viral</title>
+        <meta name="description" content="Watch JDT FC vs Ulsan HD FC live streaming. Stay updated with match info and exciting offers." />
+        <meta property="og:title" content="Live Stream: JDT FC vs Ulsan HD FC" />
         <meta property="og:description" content="Join the live stream and enjoy the exciting match!" />
         <link rel="canonical" href="https://jdt-live.netlify.app/" />
-        <meta property="og:image" content="https://nokomen.com/wp-content/uploads/2024/10/85-p15-negerivsjdt.jpg" />
+        <meta property="og:image" content="https://i.ytimg.com/vi/eI8_919xPPc/maxresdefault.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
       </Helmet>
 
       <Container fluid className="dark-mode">
-        <h2 className="text-center">Live Stream: Negeri Sembilan FC vs JDT FC</h2>
+        <h2 className="text-center">Live Stream: JDT FC vs Ulsan HD FC</h2>
 
 
         {/* Video Player */}
@@ -79,14 +80,14 @@ const App = () => {
 
           {/* Add the Social Share Component */}
           <h4 className="text-center my-3">Share this match:</h4>
-          <SocialShare title="Live Stream: Negeri Sembilan FC vs JDT FC" url="https://jdt-live.netlify.app/" />
+          <SocialShare title="Live Stream: JDT FC vs Ulsan HD FC" url="https://jdt-live.netlify.app/" />
 
           <div className="info-container" style={{ marginTop: '10em' }}>
             <h5>Info Siaran Langsung & Live Streaming:</h5>
             <p>
-              <strong>Tarikh:</strong> 1 November 2024 (Jumaat)<br />
-              <strong>Masa:</strong> 9.00 pm<br />
-              <strong>Venue:</strong> Stadium Paroi
+              <strong>Tarikh:</strong> 5 November 2024 (Selasa)<br />
+              <strong>Masa:</strong> 8.00 pm<br />
+              <strong>Venue:</strong> Stadium Sultan Ibrahim, Iskandar Puteri
             </p>
           </div>
 
