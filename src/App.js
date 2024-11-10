@@ -13,7 +13,11 @@ const App = () => {
   const [videoHeight, setVideoHeight] = useState('500px'); // Default height for video
 
   const adLinks = useMemo(() => [
-
+    'https://s.shopee.com.my/AKJGPMRYJ0',
+    'https://s.shopee.com.my/AUcgbfQuy3',
+    'https://s.shopee.com.my/9KQjDWVMKq',
+    'https://s.shopee.com.my/9Uk9PpUizt',
+    'https://s.shopee.com.my/9f3Zc8U5ew'
   ], []);
 
   useEffect(() => {

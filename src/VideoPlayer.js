@@ -3,7 +3,7 @@ import ReactPlayer from 'react-player';
 // import io from 'socket.io-client';
 import './VideoPlayer.css'; // Assuming you have styles for the overlay
 
-// const socket = io('https://socket.berita-viral.com'); // Replace with your Socket.io server URL
+// const socket = io('https://berita-viral.com/socket/'); // Replace with your Socket.io server URL
 
 
 const VideoPlayer = ({ height, url }) => { // Accept `height` and `url` as props
@@ -22,7 +22,7 @@ const VideoPlayer = ({ height, url }) => { // Accept `height` and `url` as props
     //     };
     // }, []);
 
-    // // Format the viewer count
+    // Format the viewer count
     // const formatViewerCount = (count) => {
     //     if (count >= 1000) {
     //         return (count / 1000).toFixed(1) + 'k'; // e.g., 1200 becomes 1.2k
@@ -40,10 +40,10 @@ const VideoPlayer = ({ height, url }) => { // Accept `height` and `url` as props
                 width="100%"
                 height={height}
             />
-            {/* <div className="viewer-overlay"> */}
-            {/* <i className="fas fa-user viewer-icon"></i> */}
-            {/* <span className="viewer-count">{formatViewerCount(viewers)}</span> */}
-            {/* </div> */}
+            {/* <div className="viewer-overlay">
+                <i className="fas fa-user viewer-icon"></i>
+                <span className="viewer-count">{formatViewerCount(viewers)}</span>
+            </div> */}
         </div>
     );
 };
