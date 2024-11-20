@@ -92,7 +92,7 @@ const App = () => {
         {/* Ad Popup */}
         <Modal show={showAd} onHide={handleCloseAd} centered dialogClassName="custom-modal">
           <Modal.Header closeButton>
-            <Modal.Title>Shopee 11.11 Big Sale</Modal.Title>
+            <Modal.Title>Shopee 25.11 Big Sale</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <p>Shopee Live 70% OFF. Lowest Price Guaranteed. Free Shipping. No Min Spend. Check out this amazing deal! Click below to explore.</p>
