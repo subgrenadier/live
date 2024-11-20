@@ -13,11 +13,8 @@ const App = () => {
   const [videoHeight, setVideoHeight] = useState('500px'); // Default height for video
 
   const adLinks = useMemo(() => [
-    'https://s.shopee.com.my/AKJGPMRYJ0',
-    'https://s.shopee.com.my/AUcgbfQuy3',
-    'https://s.shopee.com.my/9KQjDWVMKq',
-    'https://s.shopee.com.my/9Uk9PpUizt',
-    'https://s.shopee.com.my/9f3Zc8U5ew'
+    'https://s.shopee.com.my/8AF1dm18XT',
+    'https://s.shopee.com.my/9zgfp7mF87'
   ], []);
 
   useEffect(() => {
@@ -54,18 +51,18 @@ const App = () => {
     <>
       {/* SEO Meta Tags */}
       <Helmet>
-        <title>Live Stream: Perak FC vs JDT FC | Berita Viral</title>
-        <meta name="description" content="Watch Perak FC vs JDT FC live streaming. Stay updated with match info and exciting offers." />
-        <meta property="og:title" content="Live Stream: Perak FC vs JDT FC" />
+        <title>Live Stream: KL Rovers FC vs JDT FC | Berita Viral</title>
+        <meta name="description" content="Watch KL Rovers FC vs JDT FC live streaming. Stay updated with match info and exciting offers." />
+        <meta property="og:title" content="Live Stream: KL Rovers FC vs JDT FC" />
         <meta property="og:description" content="Join the live stream and enjoy the exciting match!" />
         <link rel="canonical" href="https://jdtlive.netlify.app/" />
-        <meta property="og:image" content="https://i.ytimg.com/vi/3zsSrH12xrM/hq720.jpg" />
+        <meta property="og:image" content="https://i.ytimg.com/vi/4gEFmG3r1rg/hq720.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
       </Helmet>
 
       <Container fluid className="dark-mode">
-        <h2 className="text-center">Live Stream: Perak FC vs JDT FC</h2>
+        <h2 className="text-center">Live Stream: KL Rovers FC vs JDT FC</h2>
 
 
         {/* Video Player */}
@@ -79,14 +76,14 @@ const App = () => {
 
           {/* Add the Social Share Component */}
           <h4 className="text-center my-3">Share this match:</h4>
-          <SocialShare title="Live Stream: Perak FC vs JDT FC" url="https://jdtlive.netlify.app/" />
+          <SocialShare title="Live Stream: KL Rovers FC vs JDT FC" url="https://jdtlive.netlify.app/" />
 
           <div className="info-container" style={{ marginTop: '10em' }}>
             <h5>Info Siaran Langsung & Live Streaming:</h5>
             <p>
-              <strong>Tarikh:</strong> 10 November 2024 (Ahad)<br />
-              <strong>Masa:</strong> 8.15 pm<br />
-              <strong>Venue:</strong>Stadium Sultan Ibrahim, Iskandar Puteri, Johor
+              <strong>Tarikh:</strong> 20 November 2024 (Rabu)<br />
+              <strong>Masa:</strong> 6.00 pm<br />
+              <strong>Venue:</strong> Stadium Sultan Ibrahim, Iskandar Puteri, Johor
             </p>
           </div>
 
@@ -98,8 +95,8 @@ const App = () => {
             <Modal.Title>Shopee 11.11 Big Sale</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <p>90% OFF. Lowest Price Guaranteed. Free Shipping. No Min Spend. Check out this amazing deal! Click below to explore.</p>
-            <Image src={`${process.env.PUBLIC_URL}/shopee1111.jpg`} fluid onClick={handleCloseAd} alt="Shopee Ad"
+            <p>Shopee Live 70% OFF. Lowest Price Guaranteed. Free Shipping. No Min Spend. Check out this amazing deal! Click below to explore.</p>
+            <Image src={`${process.env.PUBLIC_URL}/shopee2511.png`} fluid onClick={handleCloseAd} alt="Shopee Ad"
               style={{ width: '100%' }} />
           </Modal.Body>
           <Modal.Footer>
