@@ -83,9 +83,9 @@ const App = () => {
           <div className="info-container" style={{ marginTop: '10em' }}>
             <h5>Info Siaran Langsung & Live Streaming:</h5>
             <p>
-              <strong>Tarikh:</strong> 26 November 2024 (Selasa)<br />
+              <strong>Tarikh:</strong> 3 Disember 2024 (Selasa)<br />
               <strong>Masa:</strong> 8.00 pm<br />
-              <strong>Venue:</strong> Jinan Olympics Sports Center
+              <strong>Venue:</strong> Stadium Sultan Ibrahim, Iskandar Puteri
             </p>
           </div>
 
