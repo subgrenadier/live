@@ -53,24 +53,24 @@ const App = () => {
     <>
       {/* SEO Meta Tags */}
       <Helmet>
-        <title>Live Stream: JDT FC vs Buriram United FC | Berita Viral</title>
-        <meta name="description" content="Watch JDT FC vs Buriram United FC live streaming. Stay updated with match info and exciting offers." />
-        <meta property="og:title" content="Live Stream: JDT FC vs Buriram United FC" />
+        <title>Live Stream: Perak FC vs Kedah FC | Berita Viral</title>
+        <meta name="description" content="Watch Perak FC vs Kedah FC live streaming. Stay updated with match info and exciting offers." />
+        <meta property="og:title" content="Live Stream: Perak FC vs Kedah FC" />
         <meta property="og:description" content="Join the live stream and enjoy the exciting match!" />
-        <link rel="canonical" href="https://jdtlive.netlify.app/" />
-        <meta property="og:image" content="https://i.ytimg.com/vi/C1oue5778GY/hq720.jpg" />
+        <link rel="canonical" href="https://live1.netlify.app/" />
+        <meta property="og:image" content="https://i.ibb.co/k65VFT5/469195684-596861556069165-6361331918384022690-n.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
       </Helmet>
 
       <Container fluid className="dark-mode">
-        <h2 className="text-center">Live Stream: JDT FC vs Buriram United FC</h2>
+        <h2 className="text-center">Live Stream: Perak FC vs Kedah FC</h2>
 
 
         {/* Video Player */}
         <Row className="justify-content-center mb-4">
           <Col xs={12} md={8}>
-            <VideoPlayer height={videoHeight} url="https://berita-viral.com/live/buriram/index.m3u8" />
+            <VideoPlayer height={videoHeight} url="https://berita-viral.com/hls/stream.m3u8" />
           </Col>
         </Row>
 
@@ -78,14 +78,14 @@ const App = () => {
 
           {/* Add the Social Share Component */}
           <h4 className="text-center my-3">Share this match:</h4>
-          <SocialShare title="Live Stream: JDT FC vs Buriram United FC" url="https://jdtlive.netlify.app/" />
+          <SocialShare title="Live Stream: Perak FC vs Kedah FC" url="https://live1.netlify.app/" />
 
           <div className="info-container" style={{ marginTop: '10em' }}>
             <h5>Info Siaran Langsung & Live Streaming:</h5>
             <p>
-              <strong>Tarikh:</strong> 3 Disember 2024 (Selasa)<br />
-              <strong>Masa:</strong> 8.00 pm<br />
-              <strong>Venue:</strong> Stadium Sultan Ibrahim, Iskandar Puteri
+              <strong>Tarikh:</strong> 4 Disember 2024 (Rabu)<br />
+              <strong>Masa:</strong> 5.00 pm<br />
+              <strong>Venue:</strong> Stadium Manjung/Ipoh
             </p>
           </div>
 
