@@ -57,7 +57,7 @@ const App = () => {
         <meta name="description" content="Watch Perak FC vs Kedah FC live streaming. Stay updated with match info and exciting offers." />
         <meta property="og:title" content="Live Stream: Perak FC vs Kedah FC" />
         <meta property="og:description" content="Join the live stream and enjoy the exciting match!" />
-        <link rel="canonical" href="https://live1.netlify.app/" />
+        <link rel="canonical" href="https://liveper.netlify.app/" />
         <meta property="og:image" content="https://i.ibb.co/k65VFT5/469195684-596861556069165-6361331918384022690-n.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -78,7 +78,7 @@ const App = () => {
 
           {/* Add the Social Share Component */}
           <h4 className="text-center my-3">Share this match:</h4>
-          <SocialShare title="Live Stream: Perak FC vs Kedah FC" url="https://live1.netlify.app/" />
+          <SocialShare title="Live Stream: Perak FC vs Kedah FC" url="https://liveper.netlify.app/" />
 
           <div className="info-container" style={{ marginTop: '10em' }}>
             <h5>Info Siaran Langsung & Live Streaming:</h5>
