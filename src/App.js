@@ -53,18 +53,18 @@ const App = () => {
     <>
       {/* SEO Meta Tags */}
       <Helmet>
-        <title>Live Stream: Perak FC vs Kedah FC | Berita Viral</title>
-        <meta name="description" content="Watch Perak FC vs Kedah FC live streaming. Stay updated with match info and exciting offers." />
-        <meta property="og:title" content="Live Stream: Perak FC vs Kedah FC" />
+        <title>Live Stream: KDN FC vs Terengganu FC | Berita Viral</title>
+        <meta name="description" content="Watch KDN FC vs Terengganu FC live streaming. Stay updated with match info and exciting offers." />
+        <meta property="og:title" content="Live Stream: KDN FC vs Terengganu FC" />
         <meta property="og:description" content="Join the live stream and enjoy the exciting match!" />
-        <link rel="canonical" href="https://liveper.netlify.app/" />
-        <meta property="og:image" content="https://i.ibb.co/k65VFT5/469195684-596861556069165-6361331918384022690-n.jpg" />
+        <link rel="canonical" href="https://livekdn.netlify.app/" />
+        <meta property="og:image" content="https://d3lbfr570u7hdr.cloudfront.net/stadiumastro/media/sa-images/2024/12-dec/3/kdn-vs-terengganu.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
       </Helmet>
 
       <Container fluid className="dark-mode">
-        <h2 className="text-center">Live Stream: Perak FC vs Kedah FC</h2>
+        <h2 className="text-center">Live Stream: KDN FC vs Terengganu FC</h2>
 
 
         {/* Video Player */}
@@ -78,14 +78,14 @@ const App = () => {
 
           {/* Add the Social Share Component */}
           <h4 className="text-center my-3">Share this match:</h4>
-          <SocialShare title="Live Stream: Perak FC vs Kedah FC" url="https://liveper.netlify.app/" />
+          <SocialShare title="Live Stream: KDN FC vs Terengganu FC" url="https://livekdn.netlify.app/" />
 
           <div className="info-container" style={{ marginTop: '10em' }}>
             <h5>Info Siaran Langsung & Live Streaming:</h5>
             <p>
               <strong>Tarikh:</strong> 4 Disember 2024 (Rabu)<br />
               <strong>Masa:</strong> 5.00 pm<br />
-              <strong>Venue:</strong> Stadium Majlis Perbandaran Manjung
+              <strong>Venue:</strong> Stadium Majlis Perbandaran Selayang
             </p>
           </div>
 
