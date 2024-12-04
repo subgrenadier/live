@@ -85,7 +85,7 @@ const App = () => {
             <p>
               <strong>Tarikh:</strong> 4 Disember 2024 (Rabu)<br />
               <strong>Masa:</strong> 5.00 pm<br />
-              <strong>Venue:</strong> Stadium Manjung/Ipoh
+              <strong>Venue:</strong> Stadium Majlis Perbandaran Manjung
             </p>
           </div>
 
