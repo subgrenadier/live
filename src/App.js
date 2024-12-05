@@ -13,10 +13,10 @@ const App = () => {
   const [videoHeight, setVideoHeight] = useState('500px'); // Default height for video
 
   const adLinks = useMemo(() => [
-    'https://s.shopee.com.my/40PnWOLWnN',
-    'https://s.shopee.com.my/4VM47JJcmU',
-    'https://s.shopee.com.my/4L2dv0KG7T',
-    'https://s.shopee.com.my/qSlkZXaDo'
+    'https://s.shopee.com.my/6pk1yY61I8',
+    'https://s.shopee.com.my/6fQbmF6ed7',
+    'https://s.shopee.com.my/7AMsNA4kcE',
+    'https://s.shopee.com.my/703SAr5NxD',
   ], []);
 
   useEffect(() => {
@@ -53,18 +53,18 @@ const App = () => {
     <>
       {/* SEO Meta Tags */}
       <Helmet>
-        <title>Live Stream: KDN FC vs Terengganu FC | Berita Viral</title>
-        <meta name="description" content="Watch KDN FC vs Terengganu FC live streaming. Stay updated with match info and exciting offers." />
-        <meta property="og:title" content="Live Stream: KDN FC vs Terengganu FC" />
+        <title>Live Stream: DH Cebu FC vs Selangor FC | Berita Viral</title>
+        <meta name="description" content="Watch DH Cebu FC vs Selangor FC live streaming. Stay updated with match info and exciting offers." />
+        <meta property="og:title" content="Live Stream: DH Cebu FC vs Selangor FC" />
         <meta property="og:description" content="Join the live stream and enjoy the exciting match!" />
-        <link rel="canonical" href="https://livekdn.netlify.app/" />
-        <meta property="og:image" content="https://d3lbfr570u7hdr.cloudfront.net/stadiumastro/media/sa-images/2024/12-dec/3/kdn-vs-terengganu.jpg" />
+        <link rel="canonical" href="https://selangor.netlify.app/" />
+        <meta property="og:image" content="https://i.ytimg.com/vi/IzdYhpaD5AM/maxresdefault.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
       </Helmet>
 
       <Container fluid className="dark-mode">
-        <h2 className="text-center">Live Stream: KDN FC vs Terengganu FC</h2>
+        <h2 className="text-center">Live Stream: DH Cebu FC vs Selangor FC</h2>
 
 
         {/* Video Player */}
@@ -78,14 +78,14 @@ const App = () => {
 
           {/* Add the Social Share Component */}
           <h4 className="text-center my-3">Share this match:</h4>
-          <SocialShare title="Live Stream: KDN FC vs Terengganu FC" url="https://livekdn.netlify.app/" />
+          <SocialShare title="Live Stream: DH Cebu FC vs Selangor FC" url="https://selangor.netlify.app/" />
 
           <div className="info-container" style={{ marginTop: '10em' }}>
             <h5>Info Siaran Langsung & Live Streaming:</h5>
             <p>
-              <strong>Tarikh:</strong> 4 Disember 2024 (Rabu)<br />
-              <strong>Masa:</strong> 5.00 pm<br />
-              <strong>Venue:</strong> Stadium Majlis Perbandaran Selayang
+              <strong>Tarikh:</strong> 5 Disember 2024 (Khamis)<br />
+              <strong>Masa:</strong> 6.00 pm<br />
+              <strong>Venue:</strong> Rizal Memorial Stadium
             </p>
           </div>
 
