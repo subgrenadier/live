@@ -13,10 +13,10 @@ const App = () => {
   // const [videoHeight, setVideoHeight] = useState('500px'); // Default height for video
 
   const adLinks = useMemo(() => [
-    'https://s.shopee.com.my/2qDy0Lwm5A',
-    'https://s.shopee.com.my/2fuXo2xPQ9',
-    'https://s.shopee.com.my/3AqoOxvVPG',
-    'https://s.shopee.com.my/30XOCew8kF'
+    'https://s.shopee.com.my/BDCpUofKV',
+    'https://s.shopee.com.my/10mJp1lUdg',
+    'https://s.shopee.com.my/1B5k1KkrIj',
+    'https://s.shopee.com.my/g9TQPmlJe'
   ], []);
 
   //   https://s.shopee.com.my/BDCpUofKV
@@ -63,18 +63,18 @@ const App = () => {
     <>
       {/* SEO Meta Tags */}
       <Helmet>
-        <title>Live Stream: Cambodia vs Malaysia | Berita Viral</title>
-        <meta name="description" content="Watch Cambodia vs Malaysia football live streaming. Stay updated with match info and exciting offers." />
-        <meta property="og:title" content="Live Stream: Cambodia vs Malaysia" />
+        <title>Live Stream: JDT FC vs KL City FC | Berita Viral</title>
+        <meta name="description" content="Watch JDT FC vs KL City FC football live streaming. Stay updated with match info and exciting offers." />
+        <meta property="og:title" content="Live Stream: JDT FC vs KL City FC" />
         <meta property="og:description" content="Join the live stream and enjoy the exciting match!" />
-        <link rel="canonical" href="https://bolalive.netlify.app/" />
-        <meta property="og:image" content="https://i.ytimg.com/vi/UqxisyA77wc/hq720.jpg" />
+        <link rel="canonical" href="https://jdtkl.netlify.app/" />
+        <meta property="og:image" content="https://i.ytimg.com/vi/xQ8VOuP5SbM/maxresdefault.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
       </Helmet>
 
       <Container fluid className="dark-mode">
-        <h2 className="text-center py-4">Cambodia vs Malaysia</h2>
+        <h2 className="text-center py-4">JDT FC vs KL City FC</h2>
 
 
         {/* Video Player */}
@@ -83,7 +83,7 @@ const App = () => {
             <div className="ratio ratio-4x3">
               <iframe
                 src="https://berita-viral.com/embed/video"
-                title="Cambodia vs Malaysia"
+                title="JDT FC vs KL City FC"
                 referrerpolicy="origin"
                 allowfullscreen
               ></iframe>
@@ -98,7 +98,7 @@ const App = () => {
           {/* Social Share Component */}
           <Col xs={12} md={6} className="text-center">
             <h4 className="text-center my-3">Share this match:</h4>
-            <SocialShare title="Live Stream: Cambodia vs Malaysia" url="https://bolalive.netlify.app/" />
+            <SocialShare title="Live Stream: JDT FC vs KL City FC" url="https://jdtkl.netlify.app/" />
           </Col>
 
           {/* Info Section */}
@@ -107,8 +107,8 @@ const App = () => {
               <h5>Info Siaran Langsung & Live Streaming:</h5>
               <p>
                 <strong>Tarikh:</strong> 8 Disember 2024 (Ahad)<br />
-                <strong>Masa:</strong> 6.45 pm<br />
-                <strong>Venue:</strong> Phnom Penh Olympic Stadium
+                <strong>Masa:</strong> 8.15 pm<br />
+                <strong>Venue:</strong> Stdium Sultan Ibrahim
               </p>
             </div>
           </Col>
