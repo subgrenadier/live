@@ -4,13 +4,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { Helmet } from 'react-helmet';
 import SocialShare from './SocialShare';
-// import VideoPlayer from './VideoPlayer.js';
+import VideoPlayer from './VideoPlayer.js';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const App = () => {
   const [showAd, setShowAd] = useState(true);
   const [adLink, setAdLink] = useState('');
-  // const [videoHeight, setVideoHeight] = useState('500px'); // Default height for video
+  const [videoHeight, setVideoHeight] = useState('500px'); // Default height for video
 
   const adLinks = useMemo(() => [
     'https://s.shopee.com.my/4L2twii3Cp',
@@ -26,35 +26,35 @@ const App = () => {
   // https://shopee.com.my/product/19049195/24072867933
   // https://shopee.com.my/product/96670954/24255019528
 
-  // useEffect(() => {
-  //   const randomLink = adLinks[Math.floor(Math.random() * adLinks.length)];
-  //   setAdLink(randomLink);
-  // }, [adLinks]); // Include adLinks in the dependency array
+  useEffect(() => {
+    const randomLink = adLinks[Math.floor(Math.random() * adLinks.length)];
+    setAdLink(randomLink);
+  }, [adLinks]); // Include adLinks in the dependency array
 
 
   const handleCloseAd = () => {
-    window.open('https://s.shopee.com.my/4L2twii3Cp', '_blank'); // Open random ad link
+    window.open(adLink, '_blank'); // Open random ad link
     setShowAd(false);
   };
 
   // // Adjust video height based on screen orientation and size
-  // const updateVideoHeight = () => {
-  //   const aspectRatio = 9 / 16; // 16:9 aspect ratio
-  //   if (window.innerHeight > window.innerWidth) {
-  //     // Portrait mode: Height is adjusted to fit the width based on aspect ratio
-  //     setVideoHeight(`${window.innerWidth * aspectRatio}px`);
-  //   } else {
-  //     // Landscape mode: Default height
-  //     setVideoHeight('500px');
-  //   }
-  // };
+  const updateVideoHeight = () => {
+    const aspectRatio = 9 / 16; // 16:9 aspect ratio
+    if (window.innerHeight > window.innerWidth) {
+      // Portrait mode: Height is adjusted to fit the width based on aspect ratio
+      setVideoHeight(`${window.innerWidth * aspectRatio}px`);
+    } else {
+      // Landscape mode: Default height
+      setVideoHeight('500px');
+    }
+  };
 
-  // useEffect(() => {
-  //   updateVideoHeight(); // Set the height initially
-  //   window.addEventListener('resize', updateVideoHeight); // Listen for window resize events
+  useEffect(() => {
+    updateVideoHeight(); // Set the height initially
+    window.addEventListener('resize', updateVideoHeight); // Listen for window resize events
 
-  //   return () => window.removeEventListener('resize', updateVideoHeight); // Cleanup event listener
-  // }, []);
+    return () => window.removeEventListener('resize', updateVideoHeight); // Cleanup event listener
+  }, []);
 
   return (
     <>
