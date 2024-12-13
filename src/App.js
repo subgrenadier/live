@@ -13,30 +13,27 @@ const App = () => {
   // const [videoHeight, setVideoHeight] = useState('500px'); // Default height for video
 
   const adLinks = useMemo(() => [
-    'https://s.shopee.com.my/BDCpUofKV',
-    'https://s.shopee.com.my/10mJp1lUdg',
-    'https://s.shopee.com.my/1B5k1KkrIj',
-    'https://s.shopee.com.my/g9TQPmlJe'
+    'https://s.shopee.com.my/4L2twii3Cp',
+    'https://s.shopee.com.my/3VTmxBlDtg',
+    'https://s.shopee.com.my/3LAMkslrEf',
+    'https://s.shopee.com.my/3q6dLnjxDm'
   ], []);
 
-  //   https://s.shopee.com.my/BDCpUofKV
-  // https://s.shopee.com.my/10mJp1lUdg
-  // https://s.shopee.com.my/1B5k1KkrIj
-  // https://s.shopee.com.my/g9TQPmlJe
+
 
   //   https://shopee.com.my/product/13367397/25350351295
   // https://shopee.com.my/product/385280897/26017419736
   // https://shopee.com.my/product/19049195/24072867933
   // https://shopee.com.my/product/96670954/24255019528
 
-  useEffect(() => {
-    const randomLink = adLinks[Math.floor(Math.random() * adLinks.length)];
-    setAdLink(randomLink);
-  }, [adLinks]); // Include adLinks in the dependency array
+  // useEffect(() => {
+  //   const randomLink = adLinks[Math.floor(Math.random() * adLinks.length)];
+  //   setAdLink(randomLink);
+  // }, [adLinks]); // Include adLinks in the dependency array
 
 
   const handleCloseAd = () => {
-    window.open(adLink, '_blank'); // Open random ad link
+    window.open('https://s.shopee.com.my/4L2twii3Cp', '_blank'); // Open random ad link
     setShowAd(false);
   };
 
@@ -63,42 +60,42 @@ const App = () => {
     <>
       {/* SEO Meta Tags */}
       <Helmet>
-        <title>Live Stream: JDT FC vs KL City FC | Berita Viral</title>
-        <meta name="description" content="Watch JDT FC vs KL City FC football live streaming. Stay updated with match info and exciting offers." />
-        <meta property="og:title" content="Live Stream: JDT FC vs KL City FC" />
+        <title>Live Stream: KL City FC vs JDT FC  | Berita Viral</title>
+        <meta name="description" content="Watch KL City FC vs JDT FC  football live streaming. Stay updated with match info and exciting offers." />
+        <meta property="og:title" content="Live Stream: KL City FC vs JDT FC " />
         <meta property="og:description" content="Join the live stream and enjoy the exciting match!" />
-        <link rel="canonical" href="https://jdtkl.netlify.app/" />
-        <meta property="og:image" content="https://i.ytimg.com/vi/xQ8VOuP5SbM/maxresdefault.jpg" />
+        <link rel="canonical" href="https://bola.netlify.app/" />
+        <meta property="og:image" content="https://notaria.my/wp-content/uploads/2024/05/kl-city-vs-jdt-1.webp" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
       </Helmet>
 
       <Container fluid className="dark-mode">
-        <h2 className="text-center py-4">JDT FC vs KL City FC</h2>
+        <h2 className="text-center py-4">KL City FC vs JDT FC </h2>
 
 
         {/* Video Player */}
-        <Row className="justify-content-center mb-4">
+        {/* <Row className="justify-content-center mb-4">
           <Col xs={12} md={5}>
             <div className="ratio ratio-4x3">
               <iframe
                 src="https://berita-viral.com/embed/video"
-                title="JDT FC vs KL City FC"
+                title="KL City FC vs JDT FC "
                 referrerpolicy="origin"
                 allowfullscreen
               ></iframe>
             </div>
           </Col>
-        </Row>
+        </Row> */}
 
-        {/* <VideoPlayer height={videoHeight} url="https://berita-viral.com/hls/stream.m3u8" /> */}
+        <VideoPlayer height={videoHeight} url="https://berita-viral.com/hls/stream.m3u8" />
 
 
         <Row className="text-start mb-4" style={{ margin: '0 10%' }}>
           {/* Social Share Component */}
           <Col xs={12} md={6} className="text-center">
             <h4 className="text-center my-3">Share this match:</h4>
-            <SocialShare title="Live Stream: JDT FC vs KL City FC" url="https://jdtkl.netlify.app/" />
+            <SocialShare title="Live Stream: KL City FC vs JDT FC " url="https://bola.netlify.app/" />
           </Col>
 
           {/* Info Section */}
@@ -106,9 +103,9 @@ const App = () => {
             <div className="info-container" style={{ marginTop: '3em' }}>
               <h5>Info Siaran Langsung & Live Streaming:</h5>
               <p>
-                <strong>Tarikh:</strong> 8 Disember 2024 (Ahad)<br />
-                <strong>Masa:</strong> 8.15 pm<br />
-                <strong>Venue:</strong> Stdium Sultan Ibrahim
+                <strong>Tarikh:</strong> 13 Disember 2024 (Jumaat)<br />
+                <strong>Masa:</strong> 9.00 pm<br />
+                <strong>Venue:</strong> Stdium Bola Sepak Cheras, Kuala Lumpur
               </p>
             </div>
           </Col>
