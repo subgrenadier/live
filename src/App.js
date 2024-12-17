@@ -9,15 +9,15 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const App = () => {
   const [showAd, setShowAd] = useState(true);
-  const [adLink, setAdLink] = useState('');
+  // const [adLink, setAdLink] = useState('');
   const [videoHeight, setVideoHeight] = useState('500px'); // Default height for video
 
-  const adLinks = useMemo(() => [
-    'https://s.shopee.com.my/4L2twii3Cp',
-    'https://s.shopee.com.my/3VTmxBlDtg',
-    'https://s.shopee.com.my/3LAMkslrEf',
-    'https://s.shopee.com.my/3q6dLnjxDm'
-  ], []);
+  // const adLinks = useMemo(() => [
+  //   'https://s.shopee.com.my/4L2twii3Cp',
+  //   'https://s.shopee.com.my/3VTmxBlDtg',
+  //   'https://s.shopee.com.my/3LAMkslrEf',
+  //   'https://s.shopee.com.my/3q6dLnjxDm'
+  // ], []);
 
 
 
@@ -26,14 +26,14 @@ const App = () => {
   // https://shopee.com.my/product/19049195/24072867933
   // https://shopee.com.my/product/96670954/24255019528
 
-  useEffect(() => {
-    const randomLink = adLinks[Math.floor(Math.random() * adLinks.length)];
-    setAdLink(randomLink);
-  }, [adLinks]); // Include adLinks in the dependency array
+  // useEffect(() => {
+  //   const randomLink = adLinks[Math.floor(Math.random() * adLinks.length)];
+  //   setAdLink(randomLink);
+  // }, [adLinks]); // Include adLinks in the dependency array
 
 
   const handleCloseAd = () => {
-    window.open(adLink, '_blank'); // Open random ad link
+    window.open('https://s.shopee.com.my/4L2twii3Cp', '_blank'); // Open random ad link
     setShowAd(false);
   };
 
@@ -60,18 +60,18 @@ const App = () => {
     <>
       {/* SEO Meta Tags */}
       <Helmet>
-        <title>Live Stream: KL City FC vs JDT FC  | Berita Viral</title>
-        <meta name="description" content="Watch KL City FC vs JDT FC  football live streaming. Stay updated with match info and exciting offers." />
-        <meta property="og:title" content="Live Stream: KL City FC vs JDT FC " />
+        <title>Live Stream: Sri Pahang FC vs JDT FC  | Berita Viral</title>
+        <meta name="description" content="Watch Sri Pahang FC vs JDT FC  football live streaming. Stay updated with match info and exciting offers." />
+        <meta property="og:title" content="Live Stream: Sri Pahang FC vs JDT FC " />
         <meta property="og:description" content="Join the live stream and enjoy the exciting match!" />
-        <link rel="canonical" href="https://bola.netlify.app/" />
-        <meta property="og:image" content="https://notaria.my/wp-content/uploads/2024/05/kl-city-vs-jdt-1.webp" />
+        <link rel="canonical" href="https://bolabola.netlify.app/" />
+        <meta property="og:image" content="https://d3lbfr570u7hdr.cloudfront.net/stadiumastro/media/sa-images/2024/12-dec/17/info-siaran-sri-pahang-vs-jdt.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
       </Helmet>
 
       <Container fluid className="dark-mode">
-        <h2 className="text-center py-4">KL City FC vs JDT FC </h2>
+        <h2 className="text-center py-4">Sri Pahang FC vs JDT FC </h2>
 
 
         {/* Video Player */}
@@ -80,7 +80,7 @@ const App = () => {
             <div className="ratio ratio-4x3">
               <iframe
                 src="https://berita-viral.com/embed/video"
-                title="KL City FC vs JDT FC "
+                title="Sri Pahang FC vs JDT FC "
                 referrerpolicy="origin"
                 allowfullscreen
               ></iframe>
@@ -95,7 +95,7 @@ const App = () => {
           {/* Social Share Component */}
           <Col xs={12} md={6} className="text-center">
             <h4 className="text-center my-3">Share this match:</h4>
-            <SocialShare title="Live Stream: KL City FC vs JDT FC " url="https://bola.netlify.app/" />
+            <SocialShare title="Live Stream: Sri Pahang FC vs JDT FC " url="https://bolabola.netlify.app/" />
           </Col>
 
           {/* Info Section */}
@@ -103,9 +103,9 @@ const App = () => {
             <div className="info-container" style={{ marginTop: '3em' }}>
               <h5>Info Siaran Langsung & Live Streaming:</h5>
               <p>
-                <strong>Tarikh:</strong> 13 Disember 2024 (Jumaat)<br />
+                <strong>Tarikh:</strong> 17 Disember 2024 (Selasa)<br />
                 <strong>Masa:</strong> 9.00 pm<br />
-                <strong>Venue:</strong> Stdium Bola Sepak Cheras, Kuala Lumpur
+                <strong>Venue:</strong> Stadium Sultan Ibrahim, Iskandar Puteri
               </p>
             </div>
           </Col>
