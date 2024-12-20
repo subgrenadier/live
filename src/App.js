@@ -60,7 +60,7 @@ const App = () => {
         <meta name="description" content="Watch Malaysia vs Singapore football live streaming. Stay updated with match info and exciting offers." />
         <meta property="og:title" content="Live Stream: Malaysia vs Singapore" />
         <meta property="og:description" content="Join the live stream and enjoy the exciting match!" />
-        <link rel="canonical" href="https://harimau.netlify.app/" />
+        <link rel="canonical" href="https://harimau-malaya.netlify.app/" />
         <meta property="og:image" content="https://d3lbfr570u7hdr.cloudfront.net/stadiumastro/media/sa-images/2024/12-dec/19/asean-cup-malaysia-vs-singapura-amec.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -91,7 +91,7 @@ const App = () => {
           {/* Social Share Component */}
           <Col xs={12} md={6} className="text-center">
             <h4 className="text-center my-3">Share this match:</h4>
-            <SocialShare title="Live Stream: Malaysia vs Singapore" url="https://harimau.netlify.app/" />
+            <SocialShare title="Live Stream: Malaysia vs Singapore" url="https://harimau-malaya.netlify.app/" />
           </Col>
 
           {/* Info Section */}
